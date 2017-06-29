@@ -22,6 +22,10 @@ src: url(../fonts_ubuntu/Ubuntu-Regular.ttf);
   display: none;
 }
 
+.roomSetting{
+  display: none !important;
+}
+
 html{
   height: 100%;
 }
@@ -40,10 +44,12 @@ body{
   position: relative;
   overflow: inherit;
   max-width:700px;
+  overflow: hidden;
 }
 
 .head{
-  height: 3rem;
+  height: 8VH;
+  /*height: 3REM;*/
     border-bottom: 1.5px solid grey;
 }
 
@@ -54,53 +60,17 @@ body{
   width: auto;
 }
 
-
-
-.logoCol{padding-bottom: 1rem;}
+.logoCol{padding-bottom: 2.5vh;}
 
 p{
   margin-bottom: 0px;
 }
-/*.row{
-  height: inherit;
-  bottom: 4em;
-
-
-}*/
-
-/*.head{
-  height: 5rem;
-  margin-bottom:0.5rem;
-  border-bottom: 1.5px solid grey;
-
-}*/
-
-/*@media screen and (max-height: 490px) {
-    .wrapper{
-      zoom:90%;
-    }
-}*/
-
-/*.img-responsive{
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-  display: block;
-}*/
-
-/*.logo{
-  display: block;
-  height: 100%;
-  width: auto;
-  position: relative;
-  padding-top: 0.1em;
-  padding-bottom: 0.2em;
-}*/
 
 .roomNumber{padding-left: 0;}
 
 p.roomText{
-  font-size: 0.8rem;
+  /*font-size: 0.8rem;*/
+  font-size: 2vh;
   line-height: 90%;
 }
 
@@ -108,7 +78,7 @@ p.roomText{
   font-weight: lighter;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: 4.2vh;
   color: white;
   line-height: 90%;
 }
@@ -128,8 +98,9 @@ p.roomText{
 
 .mobile-nav span, .mobile-nav span:before, .mobile-nav span:after{
   position: absolute;
-  width: 1.25rem;
-  height: 0.1rem;
+  /*width: 1.25rem;*/
+  width: 3.5vh;
+  height: 0.2vh;
   background-color:grey;
   color:white;
 }
@@ -141,14 +112,14 @@ p.roomText{
 
 .mobile-nav span:before{
   content: '';
-  top:-0.45rem;
+  top:-1.2vh;
   transform-origin: 0% 50%;
   transition: transform 0.5s;
 }
 
 .mobile-nav span:after{
   content: '';
-  top:0.45rem;
+  top:1.2vh;
   transform-origin: 0% 50%;
   transition: transform 0.5s;
 }
@@ -188,9 +159,8 @@ p.roomText{
 
 .burgerMenuText{
   display: none;
-  font-size: 30px;
+  font-size: 5vh;
   margin: 0 auto;
-  /*z-index: 10;*/
   color: black !important;
   position: absolute;
   overflow: hidden;
@@ -200,7 +170,7 @@ p.roomText{
 
 .burgerMenuText.visible{
 display: block;
-top:0;
+top:9vh;
 }
 
   a:hover, a:visited, a:link {
@@ -229,7 +199,6 @@ top:0;
 .col-6 img{
   text-align: center;
   margin: 0 auto;
-  /*display: block;*/
 }
 
 .topMenuIconText{
@@ -242,7 +211,7 @@ a.topMenuIconText{
   padding: 0;
   padding-bottom: 0.3rem;
   border-bottom: 1.5px solid grey;
-  font-size: 1.9vh;
+  font-size: 2.3vh;
 }
 
 .Left{
@@ -264,12 +233,7 @@ a.topMenuIconText{
   border-right: 0.75px solid grey;
   padding-top: 0.5rem;
   color: white;
-  /*height: 5rem;*/
 }
-
-
-
-
 
 .img-responsive{
   height: 100%;
@@ -284,13 +248,9 @@ a.topMenuIconText{
 .button{
   border-radius: 2em;
   margin: auto;
-  /*display:inline-block;*/
   font-size: 2.6vh;
   position: relative;
   margin-top:3%;
-  /*-webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;*/
   width: 78%;
   background-color:	#0A1A34;
   border: 1px solid;
@@ -302,14 +262,10 @@ a.topMenuIconText{
   height: 10.5vh;
 }
 
-/* selector begins/ ends  */
-
 .leftButtonNr0, .leftButtonNr0:visited{color:grey; }
 .leftButtonNr0.active{color:white;}
 
 .buttonText{
-  /*float: left;*/
-  /*position: absolute;*/
   float: left;
   position: relative;
   top: 30%;
@@ -393,32 +349,13 @@ a.topMenuIconText{
 .topMenuIconTextRight, .topMenuIconTextRight:visited{color:grey;}
 .topMenuIconTextRight.active{  color:white; transition-duration: 1s;}
 
-.leftButtonNr11{
-  padding: 0;
-/*
-  padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-
-    border:1px solid #000000;
-  position: relative;
-  width: 50%;
-  height: 60px;
-  overflow:hidden;*/
-
-}
-
 .button:link {
 	text-decoration: none;
   color:white;
 }
 
-
-
 .lightButtons{
   display: none;
-  /*transition-duration: 1s;*/
   height: inherit;
 
   margin-top: 3%;
@@ -427,7 +364,7 @@ a.topMenuIconText{
 .lightButtons.active{
   display: block;
   padding-top: 3% ;
-  /*transition-duration: 1s;*/
+
   height: inherit;
   padding-bottom: 5%;
   width: inherit;
@@ -435,67 +372,73 @@ a.topMenuIconText{
 
 .tempButtons{
   display: none;
-  /*transition-duration: 1s;*/
   margin: 0 auto;
 }
 
 .tempButtons.active{
-  display: table;
+  display: block;
   font-size: 3rem;
   color: white;
-  /*transition-duration: 1s;*/
+  transition-duration: 1s;
   padding-top: 10%;
   width: 100%;
 
 }
 
 .tempSigns{
-  margin-top:0.5em;
-  font-size: 3rem;
-  padding-top: 0em;
-  width: 1.5em;
-  height: 1.5em;
+  font-size: 5vh;
+  margin:0 auto;
+  width: 8vh;
+  height: 8vh;
+  margin-top: 0.7vh;
 }
+
+.topMenuIconTextRight.active {
+  transition-duration: 0s;
+}
+
+.topMenuIconTextLeft.active {
+  transition-duration: 0s;
+}
+
 .tempSigns:visited{
   color: white;
 }
 
 .tempSigns:active{
   color:grey;
-  /*transition: all 0ease-in-out;*/
 }
- .setTemp{
-   /*font-size: 1.5em;*/
-   /*transition-duration: 0.5s;*/
-   font-size: 1.4em;
- }
 
- .currentTemp, #temp{
-   font-size: 0.2em;
-   height: 10px;
- }
+.col-4{
+  padding: 0;
+}
 
- .tempWarning{
-   font-size: 20px;
-   color: white;
- }
+.setTemp{
+  transition-duration: 0.5s;
+  font-size:9vh;
+  line-height: 90%;
+}
+
+.currentTemp, #temp{
+  font-size: 0.2em;
+  height: 10px;
+}
+
+.tempWarning{
+  font-size: 20px;
+  color: white;
+}
 
 .stat{
   color:white;
   display:block;
-    width:100%;
-    height:20px;
-    overflow:scroll;
+  width:100%;
+  height:20px;
+  overflow:scroll;
 }
 
 .col-3{
   height: inherit;
-}
-
-.roomSetting{
-  display: block;
-  height: 10%;
-  margin-bottom: 3vh;
 }
 
 p.roomSettingText{
@@ -509,11 +452,13 @@ p.roomSettingText{
   height: 80%;
 }
 
+
+
+
+
 @media all and (orientation:landscape) {
-.headLandscape{
-  display: block;
-  /*height: 5%;*/
-    height: 4.7vh;
+body{
+  overflow: hidden;
 }
 
 .headLandscapeWrapper{
@@ -522,24 +467,9 @@ p.roomSettingText{
   padding-bottom: 0;
 }
 
-.wrapper{
-  max-width: 1200px;
-}
-
-.head{
-  display: none;
-}
-
-.wrapper{
-  padding-top: 0;
-}
-
-.roomNumberLandscape{
+.headLandscape{
   display: block;
-}
-
-.lightButtons{
-  margin-top: 0;
+  height: 4.7vh;
 }
 
 .logoCol{
@@ -549,8 +479,31 @@ p.roomSettingText{
   float: left;
 }
 
+.wrapper{
+  max-width: 1200px;
+  padding-top: 0;
+}
+
+.head{
+  display: none;
+}
+
 .roomNumberLandscape{
   color: white;
+}
+
+.button{
+  font-size: 3.5vh;
+}
+
+.roomNumberLandscape{
+  display: block;
+}
+
+.roomTextLandscape{
+  text-align: center;
+  font-size: 2vh;
+  color: gray;
 }
 
 .roomNrLandscape{
@@ -560,11 +513,10 @@ p.roomSettingText{
   line-height: 90%;
 }
 
-.roomTextLandscape{
-  text-align: center;
-  font-size: 2vh;
-  color: gray;
+.lightButtons{
+  margin-top: 0;
 }
+
 .topMenuIconRight{
   border-right: 0.75px solid grey;
   border-top: 1.5px solid grey;
@@ -578,21 +530,11 @@ p.roomSettingText{
 }
 
 a.topMenuIconText{
-  font-size:2.4vh;
+  font-size:3vh;
 }
 
 .button{
   width: 45%;
-}
-
-body{
-  overflow: hidden;
-}
-
-.roomSetting{
-  height: 15%;
-  display: block;
-  margin: 0;
 }
 
 .imgFrameLandscape{
@@ -606,6 +548,9 @@ body{
 }
 
 .tempSigns{
-  width: 20%;
+  width: 9vh;
+  height: 9vh;
 }
+
+
 }

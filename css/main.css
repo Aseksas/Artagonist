@@ -25,6 +25,7 @@ body{
   font-family: Ubuntu, arial, sans-serif;
   height: 100%;
   background-color: #0A1A34;
+  /*bgcolor= "chucknorris";*/
 }
 
 .wrapper{
@@ -46,7 +47,7 @@ body{
 
 .head{
   /*height: 3rem;*/
-    height: 9%;
+    height: 8VH;
     border-bottom: 1.5px solid grey;
 }
 
@@ -60,7 +61,7 @@ body{
 }
 
 .logoCol{
-  padding-bottom: 1rem;
+  padding-bottom: 2.5vh;
   /*height: 100%;*/
 }
 
