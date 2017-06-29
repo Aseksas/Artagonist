@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: Ubuntu;
+src: url(../fonts_ubuntu/Ubuntu-Regular.ttf);
+}
+
+.headLandscapeWrapper{
+  display: none;
+}
+
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: Ubuntu, arial, sans-serif;
+  height: 100%;
+  background-color: #0A1A34;
+}
+
+.wrapper{
+  padding: 1.46rem;
+  /*padding: 6.2%;*/
+  margin: 0 auto;
+  background-color: #0A1A34; //#1d428a;
+  position: relative;
+  overflow: inherit;
+  max-width:700px;
+  height: 100%;
+}
+
+@media screen and (max-height: 490px) {
+    .wrapper{
+      zoom:90%;
+    }
+}
+
+.head{
+  /*height: 3rem;*/
+    height: 9%;
+    border-bottom: 1.5px solid grey;
+}
+
+.row{height: 100%;}
+
+.img-responsive{
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.logoCol{
+  padding-bottom: 1rem;
+  /*height: 100%;*/
+}
+
+/*.wrapper1{
+  height: 100%;
+}*/
+
+.welcome{
+  color:white;
+  text-align: center;
+  /*font-size:1.5rem;*/
+  font-size: 4vh;
+  /*padding-top: 3.75rem;*/
+  /*padding-bottom: 3.75rem;*/
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: 0;
+}
+
+::-webkit-input-placeholder {color: white;}
+
+input{
+  width: 100%;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 1.5px solid grey;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  /*height:2.375em;*/
+  height: 6.5vh;
+  /*font-size:1rem;*/
+  font-size: 2.8vh;
+}
+
+.info{
+  color:grey;
+  text-align:center;
+  font-size:2.2vh;
+  font-weight:600;
+}
+
+.redLine{
+  border-bottom: 1.5px solid red !important;
+  /*transition: all 1es ease-in-out;*/
+}
+
+.greyLine{
+  border-bottom: 1px solid grey !important;
+  /*transition: all 1es ease-in-out;*/
+}
+
+.redText{color: red;}
+
+.loginData{height: inherit;}
+
+/*LOGIN BUTTON*/
+.loginButton{
+/*width: 10rem;*/
+/*width: 28vh;*/
+width: 50vw;
+/*width:*/
+/*height: 3.2rem;*/
+height: 9.3vh;
+/*margin-top: 2.25rem;*/
+margin-top: 6.5vh;
+}
+
+.button{
+  border-radius: 2em;
+  display:inline-block;
+  font-size: 2.8vh;
+  background-color:	#3b5998;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: lighter;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+.button:hover{
+  border-radius: 2em;
+  background-color: #0A1A34;
+  color: #fffff;
+  border-color: #3b5998;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+.button:visited, .button:link{
+  	text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover, a:visited, a:link {text-decoration: none;}
+
+.errfield{
+  margin-top: 2.8vh;
+  color: red;
+  font-size: 2.2vh;
+}
+
+@media all and (orientation:landscape) {
+  .headLandscape{
+    display: block;
+    height: 4.7vh;
+  }
+
+  @media screen and (max-height: 420px) {
+      .wrapper{
+        width: 300px;
+      }
+  }
+
+  .wrapper{
+    height: 100%;
+    max-width: 600px;
+  }
+
+.headLandscapeWrapper{
+  display: block;
+  padding: 2.2vh;
+  padding-bottom: 0;
+}
+
+.head{
+  display: none;
+}
+
+.wrapper{
+  padding-top: 0;
+}
+
+p.welcome{
+  padding-bottom: 6%;
+}
+
+.lightButtons{
+  margin-top: 0;
+}
+
+.logoCol{
+  height: 100%;
+  position: relative;
+  margin-left: 6%;
+  padding-bottom: 0;
+
+}
+
+.roomNumberLandscape{
+  color: white;
+}
+
+.button{
+  width: 45%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.imgFrameLandscape{
+
+}
+
+.classFrame{
+  height: 85%;
+}
+
+.img-responsive{
+  display:inline;
+}
+
+
+
+}

@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none !important;
+}
+
+@font-face {
+font-family: Ubuntu;
+src: url(../fonts_ubuntu/Ubuntu-Regular.ttf);
+}
+
+.roomNumberLandscape{
+  display: none;
+}
+
+.headLandscapeWrapper{
+  display: none;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: Ubuntu, arial, sans-serif;
+  height: inherit;
+  background-color: #0A1A34;
+}
+
+.wrapper{
+  padding: 1.46rem;
+  margin: 0 auto;
+  background-color: #0A1A34; //#1d428a;
+  height: inherit;
+  position: relative;
+  overflow: inherit;
+  max-width:700px;
+}
+
+.head{
+  height: 3rem;
+    border-bottom: 1.5px solid grey;
+}
+
+.row{height: inherit;}
+
+.img-responsive{
+  height: 100%;
+  width: auto;
+}
+
+
+
+.logoCol{padding-bottom: 1rem;}
+
+p{
+  margin-bottom: 0px;
+}
+/*.row{
+  height: inherit;
+  bottom: 4em;
+
+
+}*/
+
+/*.head{
+  height: 5rem;
+  margin-bottom:0.5rem;
+  border-bottom: 1.5px solid grey;
+
+}*/
+
+/*@media screen and (max-height: 490px) {
+    .wrapper{
+      zoom:90%;
+    }
+}*/
+
+/*.img-responsive{
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}*/
+
+/*.logo{
+  display: block;
+  height: 100%;
+  width: auto;
+  position: relative;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+}*/
+
+.roomNumber{padding-left: 0;}
+
+p.roomText{
+  font-size: 0.8rem;
+  line-height: 90%;
+}
+
+.roomNr{
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  color: white;
+  line-height: 90%;
+}
+
+.room{
+  text-align: right;
+  font-size: 1rem;
+  color: grey;
+}
+
+.mobile-nav{
+  text-align: left;
+  position: relative;
+  z-index: 100;
+  top:2vh;
+}
+
+.mobile-nav span, .mobile-nav span:before, .mobile-nav span:after{
+  position: absolute;
+  width: 1.25rem;
+  height: 0.1rem;
+  background-color:grey;
+  color:white;
+}
+
+.mobile-nav span{
+  top:50%;
+  transition: background .4s;
+}
+
+.mobile-nav span:before{
+  content: '';
+  top:-0.45rem;
+  transform-origin: 0% 50%;
+  transition: transform 0.5s;
+}
+
+.mobile-nav span:after{
+  content: '';
+  top:0.45rem;
+  transform-origin: 0% 50%;
+  transition: transform 0.5s;
+}
+
+.mobile-nav.visible span {background: #0A1A34;}
+
+.mobile-nav.visible span{
+  top:50%;
+  transition: background .4s;
+}
+
+.mobile-nav.visible span:before{transform: rotate(45deg) translateX(0.5em) translateY(-7.2px);}
+
+.mobile-nav.visible span:after{transform: rotate(-45deg) translateX(0.5em) translateY(7.2px);}
+
+.burgerMenu{
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 8rem;
+  left:0;
+  right:0;
+  bottom: 0;
+  clear: both;
+}
+
+.burgerMenu.visible{
+    position: absolute;
+  display: block;
+  background-color: #0A1A34;
+  opacity: 0.3;
+}
+
+.burgerMenuText{
+  display: none;
+  font-size: 30px;
+  margin: 0 auto;
+  /*z-index: 10;*/
+  color: black !important;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 0;
+  z-index: 100;
+}
+
+.burgerMenuText.visible{
+display: block;
+top:0;
+}
+
+  a:hover, a:visited, a:link {
+  text-decoration: none;
+  color: white;
+  }
+
+.burgerMenuText.visible{
+  opacity: 1.3;
+  display: table;
+  margin: 0 auto;
+  /*margin-top: 60%;*/
+  list-style-type: none;
+  font-weight: bold;
+}
+.burgerMenuText.visible li{
+  padding-top: 15%;
+  text-align: center;
+}
+
+.wrapper1.visible{
+  filter: blur(11px);
+  transition: 500ms filter linear;
+}
+
+.col-6 img{
+  text-align: center;
+  margin: 0 auto;
+  /*display: block;*/
+}
+
+.topMenuIconText{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+a.topMenuIconText{
+  padding: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1.5px solid grey;
+  font-size: 1.9vh;
+}
+
+.Left{
+  padding-right: 0;
+}
+
+.Right{
+  padding-left: 0;
+}
+
+.topMenuIconRight{
+  border-left: 0.75px solid grey;
+  padding-top: 0.5rem;
+  color: white;
+  /*height: 5rem;*/
+}
+
+.topMenuIconLeft{
+  border-right: 0.75px solid grey;
+  padding-top: 0.5rem;
+  color: white;
+  /*height: 5rem;*/
+}
+
+
+
+
+
+.img-responsive{
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.responsiveness{
+  height:10%;
+}
+
+.button{
+  border-radius: 2em;
+  margin: auto;
+  /*display:inline-block;*/
+  font-size: 2.6vh;
+  position: relative;
+  margin-top:3%;
+  /*-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;*/
+  width: 78%;
+  background-color:	#0A1A34;
+  border: 1px solid;
+  color: #fff;
+  font-weight: lighter;
+
+  border-width: 1px;
+  text-decoration: none;
+  height: 10.5vh;
+}
+
+/* selector begins/ ends  */
+
+.leftButtonNr0, .leftButtonNr0:visited{color:grey; }
+.leftButtonNr0.active{color:white;}
+
+.buttonText{
+  /*float: left;*/
+  /*position: absolute;*/
+  float: left;
+  position: relative;
+  top: 30%;
+}
+
+.buttonTextSpan{
+  padding-left: 0;
+}
+
+.imgImg{
+  padding-right: 2%;
+  float: left:2%;
+}
+
+.buttonImg{
+  display: inline !important;
+  float:right;
+}
+
+.leftButtonNr1, .leftButtonNr1:visited{ border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr1.active{ border-color: #0A1A34; color:white; transition-duration: 0.3s; }
+
+.leftButtonNr2, .leftButtonNr2:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr2.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr3, .leftButtonNr3:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr3.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr4, .leftButtonNr4:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr4.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr5, .leftButtonNr5:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr5.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr6, .leftButtonNr6:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr6.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr7, .leftButtonNr7:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr7.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr8, .leftButtonNr8:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr8.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+.leftButtonNr9, .leftButtonNr9:visited{border-color: #0A1A34; color:grey; transition-duration: 0.4s;}
+.leftButtonNr9.active{ border-color: #0A1A34; color:white; transition-duration: 0.1s; transition-duration: 0.3s}
+
+
+.rightButtonNr0, .rightButtonNr0:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr0.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr1, .rightButtonNr1:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr1.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr2, .rightButtonNr2:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr2.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr3, .rightButtonNr3:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr3.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr4, .rightButtonNr4:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr4.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr5, .rightButtonNr5:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr5.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr6, .rightButtonNr6:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr6.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr7, .rightButtonNr7:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr7.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr8, .rightButtonNr8:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr8.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.rightButtonNr9, .rightButtonNr9:visited{color:grey; transition-duration: 0.4s;}
+.rightButtonNr9.active{  color:white; transition-duration: 0.1s; box-shadow:0px 0px 20px #fff; transition-duration: 0.3s}
+
+.topMenuIconTextLeft, .topMenuIconTextLeft:visited{color:grey;}
+.topMenuIconTextLeft.active{  color:white; transition-duration: 1s;}
+
+.topMenuIconTextRight, .topMenuIconTextRight:visited{color:grey;}
+.topMenuIconTextRight.active{  color:white; transition-duration: 1s;}
+
+.leftButtonNr11{
+  padding: 0;
+/*
+  padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    border:1px solid #000000;
+  position: relative;
+  width: 50%;
+  height: 60px;
+  overflow:hidden;*/
+
+}
+
+.button:link {
+	text-decoration: none;
+  color:white;
+}
+
+
+
+.lightButtons{
+  display: none;
+  /*transition-duration: 1s;*/
+  height: inherit;
+
+  margin-top: 3%;
+}
+
+.lightButtons.active{
+  display: block;
+  padding-top: 3% ;
+  /*transition-duration: 1s;*/
+  height: inherit;
+  padding-bottom: 5%;
+  width: inherit;
+}
+
+.tempButtons{
+  display: none;
+  /*transition-duration: 1s;*/
+  margin: 0 auto;
+}
+
+.tempButtons.active{
+  display: table;
+  font-size: 3rem;
+  color: white;
+  /*transition-duration: 1s;*/
+  padding-top: 10%;
+  width: 100%;
+
+}
+
+.tempSigns{
+  margin-top:0.5em;
+  font-size: 3rem;
+  padding-top: 0em;
+  width: 1.5em;
+  height: 1.5em;
+}
+.tempSigns:visited{
+  color: white;
+}
+
+.tempSigns:active{
+  color:grey;
+  /*transition: all 0ease-in-out;*/
+}
+ .setTemp{
+   /*font-size: 1.5em;*/
+   /*transition-duration: 0.5s;*/
+   font-size: 1.4em;
+ }
+
+ .currentTemp, #temp{
+   font-size: 0.2em;
+   height: 10px;
+ }
+
+ .tempWarning{
+   font-size: 20px;
+   color: white;
+ }
+
+.stat{
+  color:white;
+  display:block;
+    width:100%;
+    height:20px;
+    overflow:scroll;
+}
+
+.col-3{
+  height: inherit;
+}
+
+.roomSetting{
+  display: block;
+  height: 10%;
+  margin-bottom: 3vh;
+}
+
+p.roomSettingText{
+  font-size: 2.7vh;
+  line-height: 170%;
+  border-bottom: 1.5px solid grey;
+  color: white;
+}
+
+.imgFrameLandscape{
+  height: 80%;
+}
+
+@media all and (orientation:landscape) {
+.headLandscape{
+  display: block;
+  /*height: 5%;*/
+    height: 4.7vh;
+}
+
+.headLandscapeWrapper{
+  display: block;
+  padding: 2.2vh;
+  padding-bottom: 0;
+}
+
+.wrapper{
+  max-width: 1200px;
+}
+
+.head{
+  display: none;
+}
+
+.wrapper{
+  padding-top: 0;
+}
+
+.roomNumberLandscape{
+  display: block;
+}
+
+.lightButtons{
+  margin-top: 0;
+}
+
+.logoCol{
+  position: relative;
+  margin-left: 6%;;
+  padding-bottom: 0;
+  float: left;
+}
+
+.roomNumberLandscape{
+  color: white;
+}
+
+.roomNrLandscape{
+  text-align: center;
+  font-size: 4vh;
+  color: white;
+  line-height: 90%;
+}
+
+.roomTextLandscape{
+  text-align: center;
+  font-size: 2vh;
+  color: gray;
+}
+.topMenuIconRight{
+  border-right: 0.75px solid grey;
+  border-top: 1.5px solid grey;
+  margin-top: 6%;
+}
+
+.topMenuIconLeft{
+  border-left: 0.75px solid grey;
+  border-top:1.5px solid grey;
+  margin-top: 6%;
+}
+
+a.topMenuIconText{
+  font-size:2.4vh;
+}
+
+.button{
+  width: 45%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.roomSetting{
+  height: 15%;
+  display: block;
+  margin: 0;
+}
+
+.imgFrameLandscape{
+  height: 8vh;
+}
+
+.roomSettingText{
+  font-size: 2.7vh;
+  line-height: 170%;
+  border-bottom: 1.5px solid grey;
+}
+
+.tempSigns{
+  width: 20%;
+}
+}
