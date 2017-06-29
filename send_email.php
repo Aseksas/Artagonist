@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: Laurynas
@@ -20,7 +20,7 @@ if(isset($_GET['nr'])) {
             header('Location:'.'checkin.php?number='.$_SESSION['number']);
 
         } else {
-            echo 'Jūsų kambarys(-iai) jau priskirtas(-i)';
+            //echo 'Jūsų kambarys(-iai) jau priskirtas(-i)';
         }
     }
 }
@@ -36,6 +36,7 @@ if(isset($_GET['nr'])) {
             //session_destroy();
             echo 'Išsiregistravimo pranešimas išsiųstas į administraciją';
             header( "refresh:10;url=logout.php" );
+	    //header('Location: '.'logout.php' );
         } else {
             echo 'Dar nepadarytas įsiregistravimas arba nepriskirtas kambarys';
         }

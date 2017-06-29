@@ -80,13 +80,15 @@
 require_once dirname ( __FILE__ ) . '/config.php';
 
 if (isset ( $_SESSION ['number'] ) && isset ( $_SESSION ['name'] ) && isset ( $_SESSION ['surname'] ) && isset ( $_SESSION ['room'] )) {
-	header ( 'Location: ' . 'menu.php?room=' . $_SESSION ['room'] );
+	header ( 'Location: ' . 'controls.php?room=' . $_SESSION ['room'] ); //padaryt, kad mygtukas butu neaktyvus
 } elseif (isset ( $_SESSION ['number'] ) && isset ( $_SESSION ['name'] ) && isset ( $_SESSION ['surname'] )) {
 	header ( 'Location: ' . 'check.php?number=' . $_SESSION ['number'] );
 } else {
 	die ( '' );}
 
+
 // palieka ivestas reiksmes langeliuose
+
 function keepvalues($value) {
 	if (isset ( $_POST [$value] )) {
 		echo $_POST [$value];

@@ -44,21 +44,14 @@ $GLOBALS['kambarys'] = $_GET ['room'];
 
 </div>
   </div>
-
-
-
-  <div class="wrapper">
-    <div class="head">
+  <div class="wrapper" >
+    <div class="head" >
       <div class="row">
         <div class="col-3 ">
           <div class="mobile-nav">
             <span></span>
           </div>
         </div>
-
-
-
-
     <div class="col-6 logoCol">
       <img class="logo img-responsive" src="images/artagonist.png" height="55" width="200">
     </div>
@@ -83,9 +76,8 @@ $GLOBALS['kambarys'] = $_GET ['room'];
     <div class="burgerMenu">
   </div>
     <ul class="burgerMenuText text-center">
-      <li><a href="#" onclick="location='logout.php'" class="logOut">Log Out</a></li>
+      <li><a href="#" onclick="location='logout.php'" class="logOut text-center">Log Out</a></li>
       <li><a href="#" name='checkin' onclick="location='send_email.php?nr=2'" class="checkOut">Check Out</a></li>
-      <li><a href="#" onclick="location='logout.php'" class="logOut">Log Out</a></li>
     </ul>
 
 

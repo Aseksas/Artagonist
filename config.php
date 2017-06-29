@@ -13,7 +13,7 @@ setcookie(session_name(),session_id(),time()+$expire);
 
 
 $SERVER = 'http://'.$_SERVER['HTTP_HOST'].'/ArtagonistPHP3/';
-$CONTROL = "control.php";
+$CONTROL = "controls.php";
 $MSSQL_SERVER="KAROLISB-PC\SQLEXPRESSPROTEL,1433";
 $MSSQL_USER="saa";
 $MSSQL_PWD="wago00";
@@ -31,6 +31,8 @@ function checkPermission($section)
         if ($_SESSION['room'] == $section) {
         } else {
             header('Location: '.'logout.php' );
+
+
         }
     }  elseif (isset($_SESSION['number'])&& isset($_SESSION['name']) && isset($_SESSION['surname']) && !isset($_SESSION['room'])) {
     	header('Location: '.'check.php?number='.$_SESSION['number'] );
@@ -38,6 +40,7 @@ function checkPermission($section)
 
     else {
         header('Location: '.'logout.php' );
+
     }
 }
 
@@ -47,6 +50,7 @@ function checkPermission1($section){
         }
         else{
             header('Location: '.'logout.php' );
+
         }
 
 		if(isset($_SESSION['room'])){
@@ -55,6 +59,7 @@ function checkPermission1($section){
     }
     else{
         header('Location: '.'logout.php' );
+
     }
 }
 
